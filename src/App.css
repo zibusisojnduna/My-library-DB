@@ -54,6 +54,7 @@ body{
   right: 0;
   margin-left: 13cm;
   border-radius: 3%;
+  box-shadow: 0cm 0cm 0.5cm 0.5cm rgba(144, 238, 144, 0.151), 0cm 0cm 0cm 0cm rgba(144, 238, 144, 0.151);
 }
 
 #root{
@@ -72,5 +73,4 @@ body{
 }
 
 .img{
-  background-image: url("./src/assets/Divine_Madness_cover.jpg");
 }

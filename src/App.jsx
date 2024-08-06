@@ -13,12 +13,13 @@ function App() {
   let bookTable = [
     {
       isbn:"978-3-16-148410-0",
+      author:"Robert Muchamore",
       title:"Cherub:Divine Madness",
       no_of_pages:297,
       edition:"1st",
       publisher:"Penguin Books",
       price: "$19.99",
-      designer:"./src/assets/Divine_Madness_cover.jpg",
+      designer:"./assets/Divine_Madness_cover.jpg",
       release_date:"23/09/2003",
     },
 
@@ -57,7 +58,7 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
 
   return (
 <section className='card'>
-<BookCard info={bookTable}/>
+<BookCard info={bookTable[0]}/>
 </section>
   
 
