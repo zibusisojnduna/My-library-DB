@@ -7,6 +7,8 @@ import Read from './components/displayBook'
 import Update from './components/updatebook'
 import Delete from './components/deletebook'
 import BookCard from './components/bookcard'
+import Form from './components/form'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -59,6 +61,8 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
   return (
 <section className='card'>
 <BookCard info={bookTable[0]}/>
+<Form/>
+
 </section>
   
 
