@@ -8,7 +8,7 @@ function BookCard({info}){
             
             <div style={{padding:"5%"}}>
                 <h3>{info.title}</h3>
-                <h4 style={{color:"lightgrey"}}>By {info.author}</h4>
+                <h4 style={{color:"lightgrey"}}>By{info.author}</h4>
             </div>
 
             <div style={{padding:"5%"}}>
