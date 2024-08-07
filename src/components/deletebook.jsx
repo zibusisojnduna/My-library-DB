@@ -1,11 +1,14 @@
 //This is the Delete in CRUD. This deletes an item from the list.
 
-function Delete(){
-    let book = JSON.stringify("bookTable")
+function Delete({isbn}){
+    let book = JSON.parse("bookTable")
 
-    book = localStorage.removeItem()
+    function HandleDelete(){
+        
+    }
+
     return(
-        <></>
-    )
+        <button onClick={HandleDelete} style={{backgroundColor:"red", padding:"0.5cm", color:"white",borderRadius:"0.5cm"}}>Delete</button>
+            )
 }
 export default Delete

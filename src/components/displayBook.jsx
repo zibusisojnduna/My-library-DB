@@ -8,7 +8,7 @@ function Read(display){
  
 
  return(
-    {}
+    <></>
  )
 }
 export default Read

@@ -23,8 +23,8 @@ function Form(){
     }
 
     return(
-        <form className="form" style={{backgroundColor:"white", borderRadius:"1cm",marginLeft:"3cm", height:"17cm", width:"15cm",alignContent:"center"}} onSubmit={handleSubmit}>
-            <h1 style={{marginLeft:"0.5cm"}}>Book Information</h1>
+        <form className="form" style={{backgroundColor:"white",marginLeft:"3cm", height:"17cm", width:"15cm",alignContent:"center", backgroundColor:"white"}} onSubmit={handleSubmit}>
+            <h1 style={{marginLeft:"4cm"}}>Book Information</h1>
 
             <label style={{marginLeft:"5cm"}}>ISBN Number</label><br></br>
             <input type="text" id="isbn" placeholder="e.g 123-4-56-789123-0" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.isbn || ""} onChange={handleChange}></input><br></br>
@@ -53,7 +53,7 @@ function Form(){
             <label style={{marginLeft:"5cm"}}>Year of Release</label><br></br>
             <input type="text" id="year" placeholder="e.g 01/01/1990" style={{borderRadius:"3cm", marginLeft:"4cm",padding:"0.2cm"}} value={inputs.year || ""} onChange={handleChange}></input><br></br>
             <br></br>
-            <button style={{backgroundColor:"darkorange", color:"white", borderRadius:"0.2cm", marginLeft:"5cm",}}>Submit</button>
+            <button style={{backgroundColor:"orange", color:"white", borderRadius:"0.2cm", marginLeft:"5cm", padding:"0.5cm"}}>Submit</button>
         </form>
     )
 }

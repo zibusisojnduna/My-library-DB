@@ -3,11 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Read from './components/displayBook'
-import Update from './components/updatebook'
-import Delete from './components/deletebook'
+import BookCard from './components/bookcard'
+
 
 import Form from './components/form'
 import {add} from './components/addbook'
+import BookCard from './components/bookcard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -62,7 +63,11 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
   add()
 
   return (
-<section className='card'>
+<section className='card' style={{backgroundColor:"lightgreen", height:"100%", width:"100%"}}>
+{/* {bookList.map((items, index) =>(
+  <BookCard name={items} key={index}/>
+)) } */}
+<BookCard/>
 <Form/>
 <Read display={bookTable}/>
 </section>
