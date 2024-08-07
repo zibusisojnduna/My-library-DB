@@ -1,24 +1,21 @@
 
 //This is the C in CRUD. This adds a new book to the list.
-function Add({form}){
+export function add(book){
   let myBooks = JSON.parse(localStorage.getItem("bookTable"))
 
-  console.log("This is what is in book.", form)
+  // console.log("This is what is in book.")
 
-  console.log(myBooks)
+  // console.log()
   
-  myBooks.push(form)
+  myBooks.push()
 
-  localStorage.getItem("bookTable", JSON.stringify(form))
+  localStorage.getItem("bookTable", JSON.stringify())
 
   
 
 
 
-return(
-<></>
-)
+
 
 
 }
-export default Add

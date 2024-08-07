@@ -5,9 +5,9 @@ import './App.css'
 import Read from './components/displayBook'
 import Update from './components/updatebook'
 import Delete from './components/deletebook'
-import BookCard from './components/bookcard'
+
 import Form from './components/form'
-import Add from './components/addbook'
+import {add} from './components/addbook'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +27,7 @@ function App() {
 
     {
       isbn:"891-4-56-761321-1",
+      author:"J.R.R Tolkien",
       title:"Lord of the Rings",
       no_of_pages:1121,
       edition:"3rd",
@@ -38,6 +39,7 @@ function App() {
 
     {
       isbn:"567-4-90-187419-2",
+      author:"Mark Walden",
       title:"H.I.V.E:Dreadnought",
       no_of_pages:237,
       edition:"1st",
@@ -57,12 +59,12 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
 
     }
   ]
+  add()
 
   return (
 <section className='card'>
-<BookCard info={bookTable[0]}/>
 <Form/>
-
+<Read display={bookTable}/>
 </section>
   
 
