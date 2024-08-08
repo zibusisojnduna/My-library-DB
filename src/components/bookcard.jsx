@@ -1,11 +1,11 @@
 import Delete from "./deletebook"
 
-function BookCard({info, isbn}){
-    // console.log(info.designer)
+function BookCard({info}){
+    
     return(
         <div className="main" style={{boxShadow:"4cm 4cm 4cm 4cm  rgba(0, 128, 0, 0.116)"}}>
-            <div className="image" style={{padding:"10%", alignItems:"center"}}>
-                <img src={info.designer}></img>
+            <div className="image" style={{padding:"10%", alignItems:"center", backgroundImage:"./src/assets/Divine_Madness_cover.jpg"}}>
+                
             </div>
             
             <div style={{padding:"5%"}}>
@@ -14,8 +14,7 @@ function BookCard({info, isbn}){
             </div>
 
             <div style={{padding:"5%"}}>
-                <h3>{info.price}</h3>
-                <Delete isbn={info}/>
+                <h3>{info.price}</h3>    
             </div>
         </div>
     )

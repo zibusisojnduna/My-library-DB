@@ -1,6 +1,6 @@
 //This is the Delete in CRUD. This deletes an item from the list.
 
-function Delete({isbn}){
+function Delete({}){
     let book = JSON.parse("bookTable")
 
     function HandleDelete(){

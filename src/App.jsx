@@ -4,11 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Read from './components/displayBook'
 import BookCard from './components/bookcard'
-
-
 import Form from './components/form'
 import {add} from './components/addbook'
-import BookCard from './components/bookcard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -64,12 +61,10 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
 
   return (
 <section className='card' style={{backgroundColor:"lightgreen", height:"100%", width:"100%"}}>
-{/* {bookList.map((items, index) =>(
-  <BookCard name={items} key={index}/>
-)) } */}
 <BookCard/>
+
 <Form/>
-<Read display={bookTable}/>
+
 </section>
   
 
