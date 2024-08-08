@@ -3,7 +3,7 @@
 function Update(){
     
     return(
-        <button className="btn-1" onClick={alert("This has been updated")}>Edit</button>   
+        <button style={{backgroundColor:"green", borderRadius:"0.2cm", color:"white", padding:"0.5cm", marginLeft:"0.2cm", cursor:"pointer"}}>Edit</button>   
     )
 }
 export default Update

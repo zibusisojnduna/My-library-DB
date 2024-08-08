@@ -25,7 +25,7 @@ function Form(){
 
     let myBooks = JSON.parse(localStorage.getItem("bookTable",))
 
-    localStorage.setItem("myBooks", JSON.stringify(myBooks))
+    
 
 
     return(
@@ -59,7 +59,7 @@ function Form(){
             <label style={{marginLeft:"5cm"}}>Year of Release</label><br></br>
             <input type="text" id="year" placeholder="e.g 01/01/1990" style={{borderRadius:"3cm", marginLeft:"4cm",padding:"0.2cm", textAlign:"center"}} value={inputs.year} onChange={handleChange}></input><br></br>
             <br></br>
-            <button style={{backgroundColor:"orange", color:"white", borderRadius:"0.2cm", marginLeft:"5.4cm", padding:"0.5cm"}} onClick={add}>Submit</button>
+            <button style={{backgroundColor:"orange", color:"white", borderRadius:"0.2cm", marginLeft:"5.4cm", padding:"0.5cm", cursor:"pointer"}} onClick={add}>Submit</button>
         </form>
     )
 }
