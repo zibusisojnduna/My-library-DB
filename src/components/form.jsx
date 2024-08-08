@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { add } from "./addbook"
 
 
 function Form(){
@@ -27,33 +28,33 @@ function Form(){
             <h1 style={{marginLeft:"4cm"}}>Book Information</h1>
 
             <label style={{marginLeft:"5cm"}}>ISBN Number</label><br></br>
-            <input type="text" id="isbn" placeholder="e.g 123-4-56-789123-0" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.isbn || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="isbn" placeholder="e.g 123-4-56-789123-0" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs.isbn} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5.5cm"}}>Author</label><br></br>
-            <input type="text" id="author" placeholder="e.g John Smith"style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs. author || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="author" placeholder="e.g John Smith"style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs. author} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5.7cm"}}>Title</label><br></br>
-            <input type="text" id="title" placeholder="e.g Silence Of The Lambs"style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.title || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="title" placeholder="e.g Silence Of The Lambs"style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs.author} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"4.6cm"}}>Number of Pages</label><br></br>
-            <input type="text" id="pages" placeholder="e.g 100" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.pages || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="pages" placeholder="e.g 100" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs.pages} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5.5cm"}}>Edition</label><br></br>
-            <input type="text" id="edition" placeholder="e.g 3rd Edition" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.edition || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="edition" placeholder="e.g 3rd Edition" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center",textAlign:"center"}} value={inputs.edition} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5.3cm"}}>Publisher</label><br></br>
-            <input type="text" id="publisher" placeholder="e.g Macmillan Books" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.publisher || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="publisher" placeholder="e.g Macmillan Books" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs.publisher} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5.6cm"}}>Price</label><br></br>
-            <input type="text" id="price" placeholder="e.g $15.99" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm"}} value={inputs.price || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="price" placeholder="e.g $15.99" style={{borderRadius:"3cm", marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs.price} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5.4cm"}}>Designer</label><br></br>
-            <input type="text" id="designer" placeholder="e.g img.jpg" style={{borderRadius:"3cm",marginLeft:"4cm", padding:"0.2cm"}} value={inputs.designer || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="designer" placeholder="e.g img.jpg" style={{borderRadius:"3cm",marginLeft:"4cm", padding:"0.2cm", textAlign:"center"}} value={inputs.designer} onChange={handleChange}></input><br></br>
 
             <label style={{marginLeft:"5cm"}}>Year of Release</label><br></br>
-            <input type="text" id="year" placeholder="e.g 01/01/1990" style={{borderRadius:"3cm", marginLeft:"4cm",padding:"0.2cm"}} value={inputs.year || ""} onChange={handleChange}></input><br></br>
+            <input type="text" id="year" placeholder="e.g 01/01/1990" style={{borderRadius:"3cm", marginLeft:"4cm",padding:"0.2cm", textAlign:"center"}} value={inputs.year} onChange={handleChange}></input><br></br>
             <br></br>
-            <button style={{backgroundColor:"orange", color:"white", borderRadius:"0.2cm", marginLeft:"5cm", padding:"0.5cm"}}>Submit</button>
+            <button style={{backgroundColor:"orange", color:"white", borderRadius:"0.2cm", marginLeft:"5.4cm", padding:"0.5cm"}} onClick={add}>Submit</button>
         </form>
     )
 }

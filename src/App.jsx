@@ -61,7 +61,7 @@ localStorage.setItem("bookTable", JSON.stringify(bookTable))
 
   return (
 <section className='card' style={{backgroundColor:"lightgreen", height:"100%", width:"100%"}}>
-<BookCard/>
+
 
 <Form/>
 
