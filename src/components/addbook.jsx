@@ -9,8 +9,7 @@ export function add(book){
   
   myBooks.push()
 
-  localStorage.getItem("bookTable", JSON.stringify())
-
+localStorage.setItem("myBooks", JSON.stringify(myBooks))
   
 
 

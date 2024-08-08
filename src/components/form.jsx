@@ -23,8 +23,11 @@ function Form(){
         alert("Success!")
     }
 
+    let myBooks = JSON.parse(localStorage.getItem("bookTable",))
+
+
     return(
-        <form className="form" style={{backgroundColor:"white",marginLeft:"3cm", height:"17cm", width:"15cm",alignContent:"center", backgroundColor:"white"}} onSubmit={handleSubmit}>
+        <form className="form" style={{backgroundColor:"white",marginLeft:"3cm", height:"17cm", width:"15cm",alignContent:"center", backgroundColor:"white", fontFamily:"arial"}} onSubmit={handleSubmit}>
             <h1 style={{marginLeft:"4cm"}}>Book Information</h1>
 
             <label style={{marginLeft:"5cm"}}>ISBN Number</label><br></br>
