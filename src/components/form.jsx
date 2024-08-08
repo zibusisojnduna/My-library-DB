@@ -25,6 +25,8 @@ function Form(){
 
     let myBooks = JSON.parse(localStorage.getItem("bookTable",))
 
+    localStorage.setItem("myBooks", JSON.stringify(myBooks))
+
 
     return(
         <form className="form" style={{backgroundColor:"white",marginLeft:"3cm", height:"17cm", width:"15cm",alignContent:"center", backgroundColor:"white", fontFamily:"arial"}} onSubmit={handleSubmit}>
